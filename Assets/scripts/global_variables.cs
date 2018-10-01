@@ -13,9 +13,9 @@ public class global_variables : MonoBehaviour
     void Start ()
     {
         score = 0;
-        diametr = 20;
+        diametr = 30;
         radius_of_fall = 5;
-        camera_height = 50;
+        camera_height = 60;
 		
 	}
 	

@@ -14,13 +14,18 @@ public class destroy : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
+        if (transform.position.y - tr.transform.position.y <= 30)
+        {
+            BoxCollider bc = GetComponent<BoxCollider>();
+            bc.enabled = false;
+        }
         if (transform.position.y - tr.transform.position.y < -10)
         {
             Destroy(gameObject);
             Rigidbody mm = GetComponent<Rigidbody>();
             global_variables.score += mm.mass;
             global_variables.diametr += mm.mass;
-            global_variables.camera_height += mm.mass;
+            global_variables.camera_height += mm.mass/2;
             global_variables.radius_of_fall = global_variables.diametr / 4;
         }
 	}

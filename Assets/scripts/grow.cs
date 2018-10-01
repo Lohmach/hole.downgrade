@@ -15,6 +15,6 @@ public class grow : MonoBehaviour
 	void Update ()
     {
         tr = GetComponent<Transform>();
-        tr.localScale = new Vector3(global_variables.diametr, 0, global_variables.diametr);
+        tr.localScale = new Vector3(global_variables.diametr, 80, global_variables.diametr);
     }
 }
